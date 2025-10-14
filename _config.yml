@@ -23,7 +23,7 @@ repository               : "WeiHua363/WeiHua363.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "../images/wh.png"
+  avatar           : "/images/wh.png"
   name             : "Hua Wei（魏华）"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student of Peking University"
