@@ -223,8 +223,8 @@ collections:
     permalink: /:collection/:path/
   publications:
     output: true
-    #permalink: /:collection/:path/
-    permalink: /publications/:path/
+    permalink: /:collection/:path/
+    #permalink: /publications/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
