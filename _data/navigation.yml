@@ -10,9 +10,9 @@
 main:
   - title: "Publications"
     url: /publications/
-
+    weight: 10   
 
   - title: "Portfolio"
     url: /portfolio/
-        
+    weight: 20   
 
