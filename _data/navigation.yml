@@ -16,3 +16,6 @@ main:
     url: /portfolio/
     weight: 20   
 
+  - title: "CV"
+    url: /cv-json/
+    weight: 30  
