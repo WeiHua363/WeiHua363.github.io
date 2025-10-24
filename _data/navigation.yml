@@ -8,14 +8,16 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
+  - title: "CV"
+    url: /cv-json/
+    weight: 10  
+    
   - title: "Publications"
     url: /publications/
-    weight: 10   
+    weight: 20  
 
   - title: "Portfolio"
     url: /portfolio/
-    weight: 20   
+    weight: 30   
 
-  - title: "CV"
-    url: /cv-json/
-    weight: 30  
+
