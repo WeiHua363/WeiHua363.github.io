@@ -1,152 +1,83 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Wei Hua",
+    "email": "weihua25@stu.pku.edu.cn",
+    "website": "https://WeiHua363.github.io",
+    "summary": "A first-year Ph.D. student in Peking University.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "address": "No. 38, Xueyuan Road, Haidian District",
+      "city": "Beijing",
+      "countryCode": "China",
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
         "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "username": "Hua Wei",
+        "url": "https://orcid.org/0000-0003-1857-9412"
       },
       {
         "network": "GitHub",
         "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "url": "https://github.com/WeiHua363"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "Peking University",
+      "area": "Ph.D in Epidemiology and Biostatistics",
+      "studyType": "Doctoral Dissertation Research",
+      "startDate": "2025"
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "institution": "Shandong University",
+      "area": "Master of Medicine in Epidemiology and Biostatistics",
+      "studyType": "Master's Dissertation Research",
+      "startDate": "2020"
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Shandong University",
+      "area": "Bachelor of Medicine in Public Health and Preventive Medicine",
+      "studyType": "Bachelor's Dissertation Research",
+      "startDate": "2015"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "languages": [English & Chinese],
+  "interests": [epidemiology and prevention and control strategies for infectious diseases, immunization strategy for vaccine-preventable diseases, and immunological intervention strategies],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Investigating the pathogens associated with Dermacentor nuttalli and its global distribution: A study integrating metagenomic sequencing, meta-analysis and niche modeling",
+      "publisher": "Parasites & Vectors",
+      "releaseDate": "2024-01-16",
+      "website": "http://WeiHua363.github.io/files/paper1.pdf"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "A Chess and Card Room-Induced COVID-19 Outbreak and Its Agent-Based Simulation in Yangzhou, China",
+      "publisher": " Front Public Health",
+      "releaseDate": "2022-06-17",
+      "website": "http://WeiHua363.github.io/files/paper2.pdf"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Ecoclimate drivers shape virome diversity in a globally invasive tick species",
+      "publisher": "ISME J.",
+      "releaseDate": "2024-01-08",
+      "website": "http://WeiHua363.github.io/files/paper3.pdf"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Distribution and diversity of ticks determined by environmental factors in Ningxia, China",
+      "publisher": "One Health",
+      "releaseDate": "2024-09-17",
+      "website": "http://WeiHua363.github.io/files/paper4.pdf"
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+#  "portfolio": [
+#    {
+#      "name": "Portfolio item number 1",
+#      "category": "portfolio",
+#      "date": "",
+#      "url": "",
+#     "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+#    }
+#  ]
 }
