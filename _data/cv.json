@@ -43,8 +43,8 @@
       "startDate": "2015"
     }
   ],
-  "languages": [English & Chinese],
-  "interests": [epidemiology and prevention and control strategies for infectious diseases, immunization strategy for vaccine-preventable diseases, and immunological intervention strategies],
+  "languages": ["English & Chinese"],
+  "interests": ["epidemiology and prevention and control strategies for infectious diseases, immunization strategy for vaccine-preventable diseases, and immunological intervention strategies"],
   "publications": [
     {
       "name": "Investigating the pathogens associated with Dermacentor nuttalli and its global distribution: A study integrating metagenomic sequencing, meta-analysis and niche modeling",
