@@ -1,4 +1,3 @@
-
 ---
 title: "Distribution and diversity of ticks determined by environmental factors in Ningxia, China"
 collection: publications
