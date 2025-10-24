@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Bioinformatics & niche modelling & meta analysis"
+excerpt: "Short description of portfolio item number 1<br/><img src='/images/research flow.png'>"
 collection: portfolio
 ---
 
