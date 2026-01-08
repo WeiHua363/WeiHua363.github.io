@@ -54,7 +54,7 @@ picu_data.hist(figsize=(12, 8))
 plt.suptitle('直方图')
 plt.show()
 ```
-![直方图](../images/portfolio/picu-data-complete/histograms.png)
+![直方图](/images/portfolio/picu-data-complete/histograms.png)
 
 ```python
 #### 绘制箱线图
@@ -63,7 +63,7 @@ sns.boxplot(data=picu_data)
 plt.title('箱线图')
 plt.show()
 ```
-![箱线图](../images/portfolio/picu-data-complete/boxplots.png)
+![箱线图](/images/portfolio/picu-data-complete/boxplots.png)
 
 ### 模型构建
 ```python
