@@ -54,7 +54,7 @@ picu_data.hist(figsize=(12, 8))
 plt.suptitle('直方图')
 plt.show()
 ```
-![直方图](../images/portfolio/picu-data-complete/histograms.png)
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/histograms.png" alt="histograms">
 
 ```python
 #### 绘制箱线图
@@ -63,7 +63,7 @@ sns.boxplot(data=picu_data)
 plt.title('箱线图')
 plt.show()
 ```
-![箱线图](../images/portfolio/picu-data-complete/boxplots.png)
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/boxplots.png" alt="boxplots">
 
 ### 模型构建
 ```python
@@ -157,8 +157,9 @@ print("支持向量机 - 准确率: {:.4f}, 召回率: {:.4f}, AUC: {:.4f}".form
 ```
 
 
-```python
+
 #### 绘制混淆矩阵
+```python
 # 打印模型参数
 print("逻辑回归模型参数：\n", log_reg.coef_)
 # 预测测试集的概率值
@@ -327,8 +328,8 @@ except Exception as e:
 ```
 <img src="/images/portfolio/clinical-data-analysis-linear-regression/支持向量机混淆矩阵.png" alt="支持向量机混淆矩阵">
 
-```python
 #### 绘制ROC曲线
+```python
 models = {
     '逻辑回归': {'prob': y_pred_prob},  # 或者 y_pred_prob_log
     '随机森林': {'prob': y_pred_prob_rf},
@@ -360,6 +361,8 @@ plt.show()
 <img src="/images/portfolio/clinical-data-analysis-linear-regression/roc_curve.png" alt="roc_curve">
 
 ### 模型解释性分析
+逻辑回归：
+
 ```python
 import shap
 
@@ -372,24 +375,24 @@ shap.summary_plot(shap_values_lr, X_train, plot_type="bar")
 
 shap.dependence_plot('lab_5235_max', shap_values_lr.values, X_train)
 ```
-<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Beeswarm Plot.png" alt="逻辑回归SHAP-Beeswarm Plot">
-<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Bar Plot.png" alt="逻辑回归SHAP-Bar Plot">
-<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-dependent Plot.png" alt="逻辑回归SHAP-dependent Plot">
 
-逻辑回归：
 
 特征重要性：
-最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大;
-其他重要特征包括lab_5225_range（血氧饱和度范围）、lab_5235_max（最大乳酸值）和lab_5227_min（最低呼吸频率）
+最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大。
+其他重要特征包括lab_5225_range（血氧饱和度范围）、lab_5235_max（最大乳酸值）和lab_5227_min（最低呼吸频率）。
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Beeswarm Plot.png" alt="逻辑回归SHAP-Beeswarm Plot">
 
 SHAP值分布：
-lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大;
-lab_5225_range的SHAP值分布较广，表明对预测结果的影响较大
-     
+lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大。
+lab_5225_range的SHAP值分布较广，表明对预测结果的影响较大。
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Bar Plot.png" alt="逻辑回归SHAP-Bar Plot">
+
 依赖图：
-lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高;
-lab_5237_min的SHAP值随着其值的增加而减少，表明pH值越高，死亡风险越低
- 
+lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高。
+lab_5237_min的SHAP值随着其值的增加而减少，表明pH值越高，死亡风险越低。
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-dependent Plot.png" alt="逻辑回归SHAP-dependent Plot">
+
+
 ```python
 print("X_train 形状:", X_train.shape)  
 
