@@ -54,7 +54,7 @@ picu_data.hist(figsize=(12, 8))
 plt.suptitle('直方图')
 plt.show()
 ```
-![直方图](/images/portfolio/picu-data-complete/histograms.png)
+![直方图](../images/portfolio/picu-data-complete/histograms.png)
 
 ```python
 #### 绘制箱线图
@@ -63,7 +63,7 @@ sns.boxplot(data=picu_data)
 plt.title('箱线图')
 plt.show()
 ```
-![箱线图](/images/portfolio/picu-data-complete/boxplots.png)
+![箱线图](../images/portfolio/picu-data-complete/boxplots.png)
 
 ### 模型构建
 ```python
@@ -118,6 +118,14 @@ print("支持向量机模型参数：\n", svc.coef_)
 ```
 
 ### 模型评估
+逻辑回归模型：准确率最高，但召回率和AUC最低。表明模型在预测存活样本时表现较好，但在预测死亡样本时表现较差。
+
+随机森林模型的准确率和召回率略高于逻辑回归模型，但AUC仍然较低。这表明随机森林模型在预测死亡样本时表现略好于逻辑回归模型，但仍然不理想。
+
+支持向量机模型的准确率最低，但召回率和AUC最高。这表明模型在预测死亡样本时表现较好，但在预测存活样本时表现较差。
+
+三个模型的性能表现各有优劣，主要原因是数据不平衡（死亡样本仅占5.88\%）。如果更关注预测存活样本的准确性，可以选择逻辑回归或随机森林模型；如果更关注预测死亡样本的准确性，可以选择支持向量机模型。
+
 ```python
 from sklearn.metrics import accuracy_score, recall_score, roc_auc_score
 
@@ -147,11 +155,7 @@ print("随机森林 - 准确率: {:.4f}, 召回率: {:.4f}, AUC: {:.4f}".format(
 print("支持向量机 - 准确率: {:.4f}, 召回率: {:.4f}, AUC: {:.4f}".format(
     accuracy_svc, recall_svc, roc_auc_svc))
 ```
-逻辑回归模型：准确率最高，但召回率和AUC最低。表明模型在预测存活样本时表现较好，但在预测死亡样本时表现较差。
-随机森林模型的准确率和召回率略高于逻辑回归模型，但AUC仍然较低。这表明随机森林模型在预测死亡样本时表现略好于逻辑回归模型，但仍然不理想。
-支持向量机模型的准确率最低，但召回率和AUC最高。这表明模型在预测死亡样本时表现较好，但在预测存活样本时表现较差。
 
-三个模型的性能表现各有优劣，主要原因是数据不平衡（死亡样本仅占5.88\%）。如果更关注预测存活样本的准确性，可以选择逻辑回归或随机森林模型；如果更关注预测死亡样本的准确性，可以选择支持向量机模型。
 
 ```python
 #### 绘制混淆矩阵
@@ -321,7 +325,7 @@ except Exception as e:
     import traceback
     traceback.print_exc()
 ```
-(images/portfolio/clinical-data-analysis-linear-regression/支持向量机混淆矩阵.png)
+(../images/portfolio/clinical-data-analysis-linear-regression/支持向量机混淆矩阵.png)
 
 ```python
 #### 绘制ROC曲线
@@ -372,6 +376,7 @@ shap.dependence_plot('lab_5235_max', shap_values_lr.values, X_train)
 (images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Beeswarm Plot.png)
 (images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Bar Plot.png)
 (images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-dependent Plot.png)
+
 逻辑回归：
 特征重要性：
 最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大
