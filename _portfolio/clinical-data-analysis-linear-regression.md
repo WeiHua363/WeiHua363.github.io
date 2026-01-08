@@ -51,6 +51,7 @@ print(picu_data.var())
 picu_data.hist(figsize=(12, 8))
 plt.suptitle('直方图')
 plt.show()
+![直方图](/images/portfolio/picu-data-complete/histogram.png)
 
 # 绘制箱线图
 plt.figure(figsize=(12, 8))
