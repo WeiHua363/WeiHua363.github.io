@@ -41,8 +41,10 @@ print(picu_data.shape)
 print(picu_data.columns)
 print(picu_data.isnull().sum())
 print(Counter(picu_data["HOSPITAL_EXPIRE_FLAG"]))
+```
 
 ### 数据探索 - 描述性统计与可视化
+```python
 print(picu_data.mean())
 print(picu_data.median())
 print(picu_data.var())
@@ -51,16 +53,18 @@ print(picu_data.var())
 picu_data.hist(figsize=(12, 8))
 plt.suptitle('直方图')
 plt.show()
-(../images/portfolio/picu-data-complete/histogram.png)
+```
+![直方图](../images/portfolio/picu-data-complete/histogram.png)
 
+```python
 #### 绘制箱线图
 plt.figure(figsize=(12, 8))
 sns.boxplot(data=picu_data)
 plt.title('箱线图')
 plt.show()
+```
 
-
-### 模型构建与评估
+### 模型构建
 ```python
 #### 导入机器学习相关模块
 from sklearn.model_selection import train_test_split
@@ -85,8 +89,10 @@ X_train, X_test, y_train, y_test = train_test_split(picu_data_scaled, picu_data[
 #### 构建逻辑回归模型
 model = LogisticRegression()
 model.fit(X_train, y_train)
+```
 
 ### 模型评估
+```python
 y_pred = model.predict(X_test)
 cm = confusion_matrix(y_test, y_pred)
 roc_auc = roc_auc_score(y_test, y_pred)
@@ -111,3 +117,4 @@ plt.ylabel('真阳性率')
 plt.title('逻辑回归模型 ROC曲线')
 plt.legend()
 plt.show()
+```
