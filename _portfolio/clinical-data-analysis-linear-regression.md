@@ -325,7 +325,7 @@ except Exception as e:
     import traceback
     traceback.print_exc()
 ```
-(../images/portfolio/clinical-data-analysis-linear-regression/支持向量机混淆矩阵.png)
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/支持向量机混淆矩阵.png" alt="支持向量机混淆矩阵">
 
 ```python
 #### 绘制ROC曲线
@@ -357,8 +357,7 @@ plt.legend(loc="lower right")
 plt.grid(True, alpha=0.3)
 plt.show()
 ```
-
-(images/portfolio/clinical-data-analysis-linear-regression/roc_curve.png)
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/roc_curve.png" alt="roc_curve">
 
 ### 模型解释性分析
 ```python
@@ -373,21 +372,22 @@ shap.summary_plot(shap_values_lr, X_train, plot_type="bar")
 
 shap.dependence_plot('lab_5235_max', shap_values_lr.values, X_train)
 ```
-(images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Beeswarm Plot.png)
-(images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Bar Plot.png)
-(images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-dependent Plot.png)
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Beeswarm Plot.png" alt="逻辑回归SHAP-Beeswarm Plot">
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-Bar Plot.png" alt="逻辑回归SHAP-Bar Plot">
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/逻辑回归SHAP-dependent Plot.png" alt="逻辑回归SHAP-dependent Plot">
 
 逻辑回归：
+
 特征重要性：
-最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大
+最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大;
 其他重要特征包括lab_5225_range（血氧饱和度范围）、lab_5235_max（最大乳酸值）和lab_5227_min（最低呼吸频率）
 
 SHAP值分布：
-lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大
+lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大;
 lab_5225_range的SHAP值分布较广，表明对预测结果的影响较大
      
 依赖图：
-lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高
+lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高;
 lab_5237_min的SHAP值随着其值的增加而减少，表明pH值越高，死亡风险越低
  
 ```python
@@ -411,21 +411,22 @@ shap.summary_plot(sv, X_train, plot_type="bar", feature_names=X_train.columns)
 # 依赖图
 shap.dependence_plot('lab_5235_max', sv, X_train, feature_names=X_train.columns)
 ```
-(images/portfolio/clinical-data-analysis-linear-regression/随机森林SHAP-Beeswarm Plot.png)
-(images/portfolio/clinical-data-analysis-linear-regression/随机森林SHAP-Bar Plot.png)
-(images/portfolio/clinical-data-analysis-linear-regression/随机森林SHAP-dependent Plot.png)
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/随机森林SHAP-Beeswarm Plot.png" alt="随机森林SHAP-Beeswarm Plot">
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/随机森林SHAP-Bar Plot.png" alt="随机森林SHAP-Bar Plot">
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/随机森林SHAP-dependent Plot.png" alt="随机森林SHAP-dependent Plot">
 
 随机森林模型
+
 特征重要性：
-最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大
+最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大;
 其他重要特征包括lab_5237_min（最低pH值）、age_month（月龄）和lab_5235_max（最大乳酸值）
 
 SHAP值分布：
-lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大
+lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大;
 lab_5237_min的SHAP值分布较广，表明对预测结果的影响较大
     
 依赖图：
-lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高
+lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高;
 age_month的SHAP值随着月龄的增加而增加，表明月龄越大，死亡风险越高
 
 
@@ -446,11 +447,12 @@ shap.summary_plot(shap_values_svc, X_train, plot_type="bar")
 # 依赖图
 shap.dependence_plot('lab_5235_max', shap_values_svc.values, X_train)
 ```
-(images/portfolio/clinical-data-analysis-linear-regression/支持向量机SHAP-Beeswarm Plot.png)
-(images/portfolio/clinical-data-analysis-linear-regression/支持向量机SHAP-Bar Plot.png)
-(images/portfolio/clinical-data-analysis-linear-regression/支持向量机SHAP-dependent Plot.png)
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/支持向量机SHAP-Beeswarm Plot.png" alt="支持向量机SHAP-Beeswarm Plot">
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/支持向量机SHAP-Bar Plot.png" alt="支持向量机SHAP-Bar Plot">
+<img src="/images/portfolio/clinical-data-analysis-linear-regression/支持向量机SHAP-dependent Plot.png" alt="支持向量机SHAP-dependent Plot">
 
 支持向量机模型
+
 特征重要性：
 最重要的特征是lab_5257_min（最低血氧饱和度），对死亡风险预测的贡献最大
 其他重要特征包括lab_5227_min（最低呼吸频率）、lab_5225_range（血氧饱和度范围）和lab_5235_max（最大乳酸值）
@@ -465,14 +467,23 @@ lab_5237_min的SHAP值随着其值的增加而减少，表明pH值越高，死�
 
 
 综合比较
+
 特征重要性：三个模型的特征重要性排序基本一致，lab_5257_min是最重要的特征
+
 SHAP值分布：三个模型的SHAP值分布基本一致，lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大
+
 依赖图：三个模型的依赖图基本一致，lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高
 
+
+
 结论
+
 特征重要性：lab_5257_min（最低血氧饱和度）是预测死亡风险的最重要特征
+
 SHAP值分布：lab_5257_min的SHAP值分布较广，表明对预测结果的影响较大
+
 依赖图：lab_5235_max的SHAP值随着其值的增加而增加，表明乳酸值越高，死亡风险越高
+
 
 
 
