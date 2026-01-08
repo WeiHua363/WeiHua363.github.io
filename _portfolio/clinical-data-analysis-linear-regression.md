@@ -61,6 +61,7 @@ plt.show()
 
 
 ### 模型构建与评估
+```python
 # 导入机器学习相关模块
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
